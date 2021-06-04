@@ -51,19 +51,19 @@ function my_keydown(e){
         console.log("Down")
     }
     if(keypress == 87){
-        W
+        W()
         console.log("W_up")
     }
     if(keypress == 83){
-        S
+        S()
         console.log("S_down")
     }
     if(keypress == 65){
-        A
+        A()
         console.log("A_left")
     }
     if(keypress == 68){
-        D
+        D()
         console.log("D_right")
     }
 }
@@ -110,14 +110,14 @@ function S(){
     }
 }
 function A(){
-    if(car_2_x < 500){
-        car_2_x= car_2_x + 10;
+    if(car_2_x > 0 ) {
+        car_2_x= car_2_x - 10;
         upload_background();
         upload_car_2();
     }
 }
 function D(){
-    if(car_2_x < 500){
+    if(car_2_x ,700){
         car_2_x= car_2_x + 10;
         upload_background();
         upload_car_2();
